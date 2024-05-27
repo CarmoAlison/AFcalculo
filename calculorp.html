@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculo Informática</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="imagens/Logo.jpg" type="image/x-icon">
+      <link rel="shortcut icon" href="imagens/Logo.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav">
+          <div class="menu" id="menu">
+            <img
+              src="imagens/menu-aberto.png"
+              alt=""
+              onclick="MenuLateral()"
+              id="menuClick"
+            />
+          </div>
+          <div class="logo-nav">
+            <img src="imagens/Logo.jpg" alt="" />
+          </div>
+          <ul id="navMenu">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li >
+              <a href="calculoInformatica.html">Cálculo informática</a>
+            </li>
+            <li>
+              <a href="calculoquimica.html">Cálculo Química</a>
+            </li>
+            <li id="li-pronto">
+              <a href="calculorp.html">Cálculo Recursos pesqueiros</a>
+            </li>
+          </ul>
+        </div>
+        <div class="bloco-menu"></div>
+        <div id="menuLateral">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li >
+              <a href="calculoInformatica.html">Cálculo informática</a>
+            </li>
+            <li>
+              <a href="calculoquimica.html">Cálculo Química</a>
+            </li>
+            <li id="li-pronto">
+              <a href="calculorp.html">Cálculo Recursos pesqueiros</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main style="display: flex;
+    flex-wrap: wrap;justify-content: center; align-items: center;">
+      <section class="hidden">
+      <div class="calcularInformatica">
+        <div class="calcularInformatica-corp" style="background-image: url(imagens/backgroundRP.jpg);
+        background-position: center;
+        background-size: cover;">
+          <h1>Cálculo Recursos pesqueiros - Anual</h1>
+          <hr />
+          <label for="" id="nomeBim">1° Bimestre</label><br />
+          <input type="number" name="Bimestre1" id="Bim1" /><br />
+          <label for="" id="nomeBim">2° Bimestre</label><br />
+          <input type="number" name="Bimestre2" id="Bim2" /><br />
+          <label for="" id="nomeBim">3° Bimestre</label><br />
+          <input type="number" name="Bimestre3" id="Bim3" /><br />
+          <label for="" id="nomeBim">4° Bimestre</label><br />
+          <input type="number" name="Bimestre4" id="Bim4" /><br />
+
+          <button type="submit" onclick="calcular()">Cálcular</button>
+          <br><br>
+
+           <h4 id="resultadoTexto">Quanto eu tirei?😅</h4>
+           <p id="resultadoMedia">???</p>
+      
+        </div>
+      
+          <div class="calcularInformatica-corp1">
+            <h1>Cálculo Recursos pesqueiros - Semestral</h1>
+            <hr />
+            <label for="" id="nomeBim">1° Bimestre</label><br />
+            <input type="number" name="Bimestre1" id="Bim1SEM" /><br />
+            <label for="" id="nomeBim">2° Bimestre</label><br />
+            <input type="number" name="Bimestre2" id="Bim2SEM" /><br />
+            
+  
+            <button type="submit" onclick="calcularSEM()">Cálcular</button>
+            <br><br>
+  
+             <h4 id="resultadoTextoSEM">Quanto eu tirei?😅</h4>
+             <p id="resultadoMediaSEM">???</p>
+          </div>
+        </div>
+        </section>
+    </main>
+  
+  
+    <script>
+      function MenuLateral() {
+        if (menuLateral.style.display == "block") {
+          menuLateral.style.display = "none";
+        } else {
+          menuLateral.style.display = "block";
+        }
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
