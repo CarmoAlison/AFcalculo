@@ -12,25 +12,23 @@
 
 .header {
   width: 100%;
-  
+
   & img {
     width: 100%;
     size: cover;
     box-shadow: 2px 2px 10px #333;
-    
   }
 }
 
 header {
   & nav {
     width: 100%;
-    background-color:transparent;
+    background-color: transparent;
     position: fixed;
     z-index: 999;
     top: 0;
     backdrop-filter: blur(40px);
     box-shadow: 1px 2px 5px #333;
-    
 
     & .nav {
       display: flex;
@@ -84,11 +82,9 @@ header {
         transform: translateY(-5px);
         transition: all 0.3s ease-out;
       }
-      & li:hover a{
+      & li:hover a {
         color: #35d6ce;
       }
-
-      
 
       & a {
         text-decoration: none;
@@ -178,11 +174,11 @@ header {
     flex-wrap: wrap;
   }
 
-  .calcularInformatica{
+  .calcularInformatica {
     flex-wrap: wrap;
   }
 
-  .header img{
+  .header img {
     margin-top: 100px;
   }
 }
@@ -423,6 +419,11 @@ main {
         margin: 10px;
         font-family: "Poetsen One", sans-serif;
       }
+
+      & p {
+        text-align: justify;
+      }
+
       & button {
         max-width: 250px;
         height: 70px;
@@ -464,6 +465,10 @@ main {
         margin: 10px;
         font-family: "Poetsen One", sans-serif;
       }
+
+      & p {
+        text-align: justify;
+      }
       & button {
         max-width: 250px;
         height: 70px;
@@ -499,11 +504,14 @@ main {
         max-width: 300px;
         border-radius: 10px 10px 0px 0px;
       }
-     
 
       & h2 {
         font-size: 30px;
         font-family: "Poetsen One", sans-serif;
+      }
+
+      & p {
+        text-align: justify;
       }
       & button {
         max-width: 250px;
@@ -526,8 +534,6 @@ main {
       max-width: 600px;
     }
   }
-
-  
 }
 
 main {
@@ -543,8 +549,7 @@ main {
     background-color: transparent;
     border-radius: 15px;
     box-shadow: 2px 2px 7px #333;
-    
-  
+
     & .calcularInformatica-corp {
       display: block;
       padding: 10px;
@@ -556,7 +561,7 @@ main {
       color: #000000;
       border-radius: 20px;
       backdrop-filter: blur(40px);
-      background-color:transparent;
+      background-color: transparent;
       box-shadow: 0px 2px 10px;
       filter: drop-shadow(2px 3px 5px #2e2e30c2);
     }
@@ -593,7 +598,7 @@ main {
       box-shadow: 2px -2px 5px #ffffff;
     }
 
-    & label{
+    & label {
       filter: drop-shadow(2px 3px 5px #ffffff);
     }
 
@@ -616,7 +621,7 @@ main {
 }
 
 @media (min-aspect-ratio: 16/9) {
-  video{
+  video {
     width: 100%;
     height: auto;
   }
@@ -830,8 +835,3 @@ footer {
     transform: translatex(0);
   }
 }
-
-
-
-
-
