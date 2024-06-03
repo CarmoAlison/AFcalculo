@@ -59,12 +59,12 @@ header {
       gap: 10px;
     }
     & .logo-nav img {
-      width: 80px;
+      width: 200px;
       height: auto;
       border-radius: 10px;
       display: flex;
       justify-content: center;
-      box-shadow: 2px 2px 5px #ffffff;
+      
     }
 
     & ul {
@@ -83,7 +83,7 @@ header {
         transition: all 0.3s ease-out;
       }
       & li:hover a {
-        color: #35d6ce;
+        color: #0c1336;
       }
 
       & a {
@@ -114,10 +114,10 @@ header {
 
   #menuLateral {
     display: none;
-    background-color: #000000;
+    background-color: #000020;
     z-index: 999;
-    width: 400px;
-    height: 100%;
+    width: 100%;
+    height: 600px;
     color: #ffffff;
     border-radius: 0px 0px 10px 0px;
     padding: 10px;
@@ -136,6 +136,7 @@ header {
       display: block;
       gap: 20px;
       color: #ffffff;
+
       & li {
         padding: 10px;
         list-style: none;
@@ -144,7 +145,7 @@ header {
       }
 
       & li:hover {
-        background-color: #35d6ce;
+        background-color: #ffffff;
         color: #ffffff;
         border-radius: 20px;
         transition: all 0.5s;
@@ -161,6 +162,19 @@ header {
         display: inline-block;
         padding: 15px;
         font-family: "Poetsen One", sans-serif;
+      }
+    }
+    .menulateral-footer {
+      display: flex;
+      margin-top:36%;
+      background-color: #ffffff;
+      padding: 7px;
+      border-radius: 10px 10px 0px 0px ;
+
+      & img {
+        width: 100px;
+        border-radius: 10px;
+        border: .3px solid #333;
       }
     }
   }
@@ -200,6 +214,7 @@ main {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
     justify-content: center;
     animation-duration: 1s;
     animation-delay: 0.3s;
@@ -268,15 +283,22 @@ main {
 
   & .centro-main1 {
     margin: auto;
-    width: 70%;
+    width: 100%;
     padding: 20px;
-    display: flex;
     align-items: center;
     justify-content: space-evenly;
     background-color: #ffffff;
     color: #000000;
     flex-wrap: wrap;
 
+    & hr {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      height: 3px;
+      background-color: #000020;
+      border: none;
+    }
 
     & .h1Main {
       font-size: 20px;
@@ -285,6 +307,8 @@ main {
       display: flex;
       align-items: center;
       text-align: center;
+      color: #000020;
+      margin: auto;
 
       & img {
         width: 50px;
@@ -299,11 +323,12 @@ main {
 
     & .pMain {
       width: 350px;
-      font-size: 17px;
+      font-size: 19px;
       padding: 10px;
       text-align: justify;
       display: flex;
       align-self: center;
+      margin: auto;
     }
   }
 
@@ -320,8 +345,8 @@ main {
       width: 100%;
       max-width: 700px;
       height: auto;
-      background-color: #ffffff;
-      color: #000000;
+      background: linear-gradient(#304c7a, #243963, #18264d, #0c1336, #000020);
+      color: #ffffff;
       border-radius: 30px;
       border: none;
       padding: 10px;
@@ -383,9 +408,13 @@ main {
     flex-wrap: wrap;
 
     & h1 {
-      font-size: 30px;
+      font-size: 40px;
       text-align: center;
-      filter: drop-shadow(2px 3px 5px #535353);
+      width: 100%;
+      background-color: #000020;
+      filter: drop-shadow(2px 3px 5px #000020);
+      padding: 10px;
+      border-radius: 15px 15px 0px 0px;
     }
 
     & p {
@@ -399,11 +428,11 @@ main {
     }
     & .infCalc {
       padding: 10px;
-      background-color: #ffffff;
-      color: #000000;
+      background: linear-gradient(#304c7a, #243963, #18264d, #0c1336, #000020);
+      color: #ffffff;
       border-radius: 10px;
       display: flex;
-      width: 90%;
+      width: 95%;
       justify-content: space-around;
       text-align: center;
       align-items: center;
@@ -414,7 +443,7 @@ main {
       & img {
         width: 100%;
         max-width: 300px;
-        border-radius: 10px 10px 0px 0px;
+        border-radius: 10px;
       }
 
       & h2 {
@@ -430,14 +459,14 @@ main {
       & button {
         max-width: 250px;
         height: 70px;
-        background-color: #35d6ce;
+        background-color: #2b4c7e;
         color: #ffffff;
         border: none;
         border-radius: 20px;
         font-size: 30px;
         padding: 10px;
         margin: 10px;
-        box-shadow: 2px 2px #3600b3;
+        box-shadow: 2px 2px #ffffff;
       }
       & button:hover {
         background-color: #07006d;
@@ -445,11 +474,11 @@ main {
     }
     & .quiCalc {
       padding: 10px;
-      background-color: #ffffff;
-      color: #000000;
+      background: linear-gradient(#304c7a, #243963, #18264d, #0c1336, #000020);
+      color: #ffffff;
       border-radius: 10px;
       display: flex;
-      width: 90%;
+      width: 95%;
       justify-content: space-around;
       text-align: center;
       align-items: center;
@@ -460,7 +489,7 @@ main {
       & img {
         width: 100%;
         max-width: 300px;
-        border-radius: 10px 10px 0px 0px;
+        border-radius: 10px;
       }
 
       & h2 {
@@ -475,14 +504,14 @@ main {
       & button {
         max-width: 250px;
         height: 70px;
-        background-color: #35d6ce;
+        background-color: #2b4c7e;
         color: #ffffff;
         border: none;
         border-radius: 20px;
         font-size: 30px;
         padding: 10px;
         margin: 10px;
-        box-shadow: 2px 2px #3600b3;
+        box-shadow: 2px 2px #ffffff;
       }
       & button:hover {
         background-color: #07006d;
@@ -490,11 +519,11 @@ main {
     }
     & .rpCalc {
       padding: 10px;
-      background-color: #ffffff;
-      color: #000000;
+      background: linear-gradient(#304c7a, #243963, #18264d, #0c1336, #000020);
+      color: #ffffff;
       border-radius: 10px;
       display: flex;
-      width: 90%;
+      width: 95%;
       justify-content: space-around;
       text-align: center;
       align-items: center;
@@ -505,7 +534,7 @@ main {
       & img {
         width: 100%;
         max-width: 300px;
-        border-radius: 10px 10px 0px 0px;
+        border-radius: 10px;
       }
 
       & h2 {
@@ -519,14 +548,14 @@ main {
       & button {
         max-width: 250px;
         height: 70px;
-        background-color: #35d6ce;
+        background-color: #2b4c7e;
         color: #ffffff;
         border: none;
         border-radius: 20px;
         font-size: 30px;
         padding: 10px;
         margin: 10px;
-        box-shadow: 2px 2px #3600b3;
+        box-shadow: 2px 2px #ffffff;
       }
       & button:hover {
         background-color: #07006d;
@@ -553,7 +582,7 @@ main {
     border-radius: 15px;
     box-shadow: 2px 2px 2px #ffffff;
     backdrop-filter: blur(40px);
-    border: .5px double #ffffff;
+    border: 0.5px double #ffffff;
 
     & .calcularInformatica-corp {
       display: block;
@@ -567,14 +596,13 @@ main {
       border-radius: 20px;
       backdrop-filter: blur(50px);
       background-color: transparent;
-      
     }
     & .calcularInformatica-corp1 {
       color: #ffffff;
       & label {
         filter: drop-shadow(2px 3px 5px #000000);
       }
-  
+
       & h1 {
         margin: 10px;
         font-size: 30px;
@@ -582,72 +610,71 @@ main {
         filter: drop-shadow(2px 3px 5px #000000);
       }
     }
-      & h4 {
-        margin: 10px;
-        font-size: 20px;
-        font-family: "Poetsen One", sans-serif;
-        filter: drop-shadow(2px 3px 5px #000000);
-      }
-      & p {
-        margin: 10px;
-        font-size: 20px;
-        font-family: "Poetsen One", sans-serif;
-        filter: drop-shadow(2px 3px 5px #000000);
-      }
-      & h1 {
-        margin: 10px;
-        font-size: 30px;
-        font-family: "Poetsen One", sans-serif;
-        filter: drop-shadow(2px 3px 5px #000000);
-      }
-    }
-
-    & input {
-      padding: 10px;
-      width: 100%;
-      max-width: 100px;
+    & h4 {
       margin: 10px;
-      border: none;
-      border-bottom: 2px solid #ffffff;
-      background-color: transparent;
-      outline: none;
-      text-align: center;
-      font-size: 25px;
-      color: #ffffff;
-      filter: drop-shadow(2px 3px 5px #000000);
-    }
-
-    & button {
-      width: 100%;
-      max-width: 200px;
-      background-color: #3600b3;
-      color: #ffffff;
-      border: none;
-      border-radius: 10px;
-      height: 50px;
-      margin: 10px;
-      font-size: 22px;
-      box-shadow: 2px 2px 5px #000000;
-    }
-    & button:hover {
-      background-color: #0c2de6;
-      transition: all 0.4s ease-out;
-      box-shadow: 2px -2px 5px #ffffff;
-    }
-
-    & label {
-      filter: drop-shadow(2px 3px 5px #000000);
-    }
-
-
-    & #nomeBim {
       font-size: 20px;
       font-family: "Poetsen One", sans-serif;
+      filter: drop-shadow(2px 3px 5px #000000);
     }
-
-    & hr {
+    & p {
       margin: 10px;
+      font-size: 20px;
+      font-family: "Poetsen One", sans-serif;
+      filter: drop-shadow(2px 3px 5px #000000);
     }
+    & h1 {
+      margin: 10px;
+      font-size: 30px;
+      font-family: "Poetsen One", sans-serif;
+      filter: drop-shadow(2px 3px 5px #000000);
+    }
+  }
+
+  & input {
+    padding: 10px;
+    width: 100%;
+    max-width: 100px;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    background-color: transparent;
+    outline: none;
+    text-align: center;
+    font-size: 25px;
+    color: #ffffff;
+    filter: drop-shadow(2px 3px 5px #000000);
+  }
+
+  & button {
+    width: 100%;
+    max-width: 200px;
+    background-color: #000020;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    margin: 10px;
+    font-size: 22px;
+    box-shadow: 2px 2px 5px #ffffff;
+  }
+  & button:hover {
+    background-color: #001172;
+    transition: all 0.4s ease-out;
+    box-shadow: 2px -2px 5px #ffffff;
+  }
+
+  & label {
+    filter: drop-shadow(2px 3px 5px #000000);
+  }
+
+  & #nomeBim {
+    font-size: 20px;
+    font-family: "Poetsen One", sans-serif;
+  }
+
+  & hr {
+    margin: 10px;
+  }
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -659,7 +686,7 @@ main {
 
 footer {
   width: 100%;
-  background-color: #ffffff;
+  background: linear-gradient(#304c7a, #243963, #18264d, #0c1336, #000020);
   animation: jump 1s infinite alternate;
   box-shadow: 0px 2px 10px #333;
 
@@ -678,7 +705,7 @@ footer {
 
       & img {
         width: 100%;
-        max-width: 200px;
+        max-width: 400px;
         height: 100%;
         max-height: 200px;
         border-radius: 20px;
@@ -707,7 +734,7 @@ footer {
       }
 
       & a {
-        color: #000000;
+        color: #ffffff;
         text-decoration: none;
       }
     }
@@ -736,7 +763,8 @@ footer {
           width: 50px;
           height: 50px;
           border-radius: 50%;
-          border: 0.3px solid #000000;
+          border: 0.3px solid #ffffff;
+          background-color: #ffffff;
         }
         & .inst:hover {
           transform: translateY(-10px);
@@ -748,7 +776,8 @@ footer {
           width: 50px;
           height: 50px;
           border-radius: 50%;
-          border: 0.3px solid #000000;
+          border: 0.3px solid #ffffff;
+          background-color: #ffffff;
         }
         & .whats:hover {
           transform: translateY(-10px);
@@ -760,7 +789,8 @@ footer {
           width: 50px;
           height: 50px;
           border-radius: 50%;
-          border: 0.3px solid #000000;
+          border: 0.3px solid #ffffff;
+          background-color: #ffffff;
         }
         & .tel:hover {
           transform: translateY(-10px);
@@ -772,8 +802,8 @@ footer {
   .footer2 {
     text-align: center;
     width: 100%;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     padding: 10px;
   }
 }
