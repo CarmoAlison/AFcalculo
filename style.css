@@ -83,7 +83,7 @@ header {
         transition: all 0.3s ease-out;
       }
       & li:hover a {
-        color: #0c1336;
+        color: #c9c9c9;
       }
 
       & a {
@@ -166,10 +166,11 @@ header {
     }
     .menulateral-footer {
       display: flex;
-      margin-top:36%;
+      margin-top:52%;
       background-color: #ffffff;
       padding: 7px;
       border-radius: 10px 10px 0px 0px ;
+      
 
       & img {
         width: 100px;
@@ -402,7 +403,7 @@ main {
     width: 100%;
     padding: 20px;
     align-self: center;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: #ffffff;
     color: #ffffff;
     flex-wrap: wrap;
@@ -436,7 +437,7 @@ main {
       justify-content: space-around;
       text-align: center;
       align-items: center;
-      margin: 30px;
+      margin: 20px;
       box-shadow: 4px 4px 10px #333;
       flex-wrap: wrap;
 
@@ -482,7 +483,7 @@ main {
       justify-content: space-around;
       text-align: center;
       align-items: center;
-      margin: 30px;
+      margin: 20px;
       box-shadow: 4px 4px 10px #333;
       flex-wrap: wrap;
 
@@ -527,7 +528,7 @@ main {
       justify-content: space-around;
       text-align: center;
       align-items: center;
-      margin: 30px;
+      margin: 20px;
       box-shadow: 4px 4px 10px #333;
       flex-wrap: wrap;
 
