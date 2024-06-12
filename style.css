@@ -64,7 +64,6 @@ header {
       border-radius: 10px;
       display: flex;
       justify-content: center;
-      
     }
 
     & ul {
@@ -166,16 +165,15 @@ header {
     }
     .menulateral-footer {
       display: flex;
-      margin-top:52%;
+      margin-top: 42%;
       background-color: #ffffff;
       padding: 7px;
-      border-radius: 10px 10px 0px 0px ;
-      
+      border-radius: 10px 10px 0px 0px;
 
       & img {
         width: 100px;
         border-radius: 10px;
-        border: .3px solid #333;
+        border: 0.3px solid #333;
       }
     }
   }
