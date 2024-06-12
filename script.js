@@ -106,4 +106,15 @@ elements2.forEach((element) => myObserver4.observe(element));
 
 
 
+function logar(){
+    var login = document.getElementById('login').value;
+    var senha = document.getElementById("senha").value;
 
+    if (login == "admin" && senha == "20211074010015" || login == "@escolar.ifrn.edu.br" || login == "alison admin" && senha == "adminalison2210")  {
+   alert('Usuário e senha corretos!! aproveite o site.')
+      location.href = "principal.html";
+    }else{
+        alert("Usuário ou senha incorreto!"); 
+    }
+
+  }
