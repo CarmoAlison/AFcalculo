@@ -22,9 +22,9 @@
     padding: 10px;
     width: 100%;
     max-width: 500px;
-    box-shadow: 2px 2px 5px #07006d;
+    box-shadow: 2px 2px 5px #ffffff;
     border-radius: 20px;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(2px);
 
     & .login-cabecario {
       width: 100%;
@@ -93,6 +93,7 @@
         color: #ffffff;
         padding: 5px;
         filter: drop-shadow(2px 3px 5px #000000);
+        
       }
       & .input-login::placeholder {
         font-size: 15px;
@@ -135,7 +136,28 @@
   }
 }
 
-alert {
-  background-color: #07006d;
-  color: #ffffff;
+   /* Estilos para o alerta */
+   .alert {
+    padding: 15px;
+    background-color: #f44336; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto branco */
+    border-radius: 4px; /* Bordas arredondadas */
+    margin-bottom: 15px;
+}
+
+/* Estilos para o botão de fechar */
+.close-btn {
+    margin-left: 15px;
+    color: white; /* Cor do texto branco */
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Estilizando o botão de fechar quando passar o mouse */
+.close-btn:hover {
+    color: black; /* Cor do texto preto */
 }
