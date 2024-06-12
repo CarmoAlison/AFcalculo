@@ -118,3 +118,7 @@ function logar(){
     }
 
   }
+
+  bootbox.alert("Olá, seja bem vindo ao AFcalc! cálcule suas notas com o melhor site!");
+
+

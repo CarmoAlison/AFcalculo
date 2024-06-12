@@ -22,9 +22,9 @@
     padding: 10px;
     width: 100%;
     max-width: 500px;
-    box-shadow: 2px 2px 5px #ffffff;
+    box-shadow: 2px 2px 5px #07006d;
     border-radius: 20px;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(10px);
 
     & .login-cabecario {
       width: 100%;
@@ -101,23 +101,19 @@
         filter: none; 
       }
 
-      & button {
-        width: 50%;
-        height: 50px;
+      & #abrir {
+        width: 70%;
         margin: auto;
         display: block;
-        background-color: #07006d;
-        color: #ffffff;
         border: none;
-        border-radius: 15px;
+        border-radius: 10px;
         font-size: 22px;
-        cursor: pointer;
       }
       & button a {
         color: #ffffff;
         text-decoration: none;
       }
-      & button:hover {
+      & #abrir:hover {
         background-color: #1100ff;
         transition: all 0.3s ease-out;
         transform: translateY(-5px);
@@ -136,28 +132,9 @@
   }
 }
 
-   /* Estilos para o alerta */
-   .alert {
-    padding: 15px;
-    background-color: #f44336; /* Cor de fundo vermelha */
-    color: white; /* Cor do texto branco */
-    border-radius: 4px; /* Bordas arredondadas */
-    margin-bottom: 15px;
+#container{
+  width: 70%;
+  display: flex;
+  align-self: center;
 }
 
-/* Estilos para o botão de fechar */
-.close-btn {
-    margin-left: 15px;
-    color: white; /* Cor do texto branco */
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-/* Estilizando o botão de fechar quando passar o mouse */
-.close-btn:hover {
-    color: black; /* Cor do texto preto */
-}
