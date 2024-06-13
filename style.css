@@ -8,6 +8,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Comfortaa", sans-serif;
+  border: 1px solid #333;
 }
 
 .header {
@@ -321,7 +322,8 @@ main {
     }
 
     & .pMain {
-      width: 350px;
+      width: 100%;
+      max-width: 350px;
       font-size: 19px;
       padding: 10px;
       text-align: justify;

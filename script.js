@@ -1,5 +1,3 @@
-
-
 function calcular(){
 var Bimestre1 = Number(document.getElementById('Bim1').value);    
 var Bimestre2 = Number(document.getElementById('Bim2').value);    
@@ -106,19 +104,46 @@ elements2.forEach((element) => myObserver4.observe(element));
 
 
 
-function logar(){
-    var login = document.getElementById('login').value;
-    var senha = document.getElementById("senha").value;
 
-    if (login == "admin" && senha == "20211074010015" || login == "@escolar.ifrn.edu.br" || login == "alison admin" && senha == "adminalison2210")  {
-   alert('Usuário e senha corretos!! aproveite o site.')
-      location.href = "principal.html";
-    }else{
-        alert("Usuário ou senha incorreto!"); 
-    }
-
-  }
 
   bootbox.alert("Olá, seja bem vindo ao AFcalc! cálcule suas notas com o melhor site!");
 
 
+
+let login = document.getElementById('login');
+let senha = document.getElementById('senha');
+let form = document.querySelector("form");
+let textform = document.getElementById('textform');
+let textEmail = document.getElementById('textEmail');
+
+
+form.addEventListener('submit' , (e) =>{
+    if(login.value == '' && senha.value == ''){
+        textform.textContent = 'Você precisa preencher todos o campo';
+    }else if(validatorEmail(login.value) === true ){
+        console.log(login.value);
+        console.log(senha.value);
+        textEmail.textContent = "";
+        location.href = "principal.html";
+    }else{
+        console.log("Requisição não atendida!");
+    }
+    e.preventDefault();
+
+});
+
+login.addEventListener("Keyup", ()=>{
+    if(validatorEmail(login.value) !== true){
+        textEmail.textContent = "O formato do email deve ser Ex: abc@escolar.ifrn.edu.br"
+        
+    }else{
+        textEmail.textContent = '';
+    }
+
+})
+
+function validatorEmail(login){
+    let emailPattern = /^[a-zA-Z0-9._%+-]+@escolar\.ifrn\.edu\.br$/;
+    return emailPattern.test(login);
+
+}

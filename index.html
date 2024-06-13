@@ -17,21 +17,26 @@
     "
   >
     <main class="main-login">
-
-
       <div class="login-body">
         <div class="login-cabecario">
           <img src="imagens/Logo.png" alt="" />
         </div>
         <hr />
         <div class="login-main">
-          <form>
+          <form autocomplete="off">
             <div class="label">
               <img src="imagens/homem-usuario.png" alt="" id="icone-login" />
               <label for="">Usuário</label>
             </div>
             <br />
-            <input type="text" class="input-login" id="login" required placeholder="Digite seu usuário..."/><br />
+            <input
+              type="text"
+              class="input-login"
+              id="login"
+              required
+              placeholder="Digite seu usuário..."
+            /><br />
+            <small id="textEmail"></small>
             <div class="label">
               <img
                 src="imagens/cadeado.png"
@@ -42,32 +47,58 @@
               <label for="">Senha</label>
             </div>
             <br />
-            <input type="password" class="input-login" id="senha" required placeholder="Digite sua senha..."/><br />
+            <input
+              type="password"
+              class="input-login"
+              id="senha"
+              required
+              placeholder="Digite sua senha..."
+            /><br />
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+            <!-- Latest compiled and minified CSS -->
+            <link
+              rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+              integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+              crossorigin="anonymous"
+            />
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+            <!-- Optional theme -->
+            <link
+              rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"
+              integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX"
+              crossorigin="anonymous"
+            />
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+            <!-- Latest compiled and minified JavaScript -->
+            <script
+              src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+              integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+              crossorigin="anonymous"
+            ></script>
 
-<script src="https://github.com/makeusabrew/bootbox/releases/download/v4.4.0/bootbox.min.js"></script>
+            <script src="https://github.com/makeusabrew/bootbox/releases/download/v4.4.0/bootbox.min.js"></script>
 
-
-<div class="container" id="container">
-  <br>
-<button class="btn btn-primary" id="abrir" onclick="logar()">ENTRAR</button>
-  </div>
+            <div class="container" id="container">
+              <br />
+              <button class="btn btn-primary" id="abrir">
+                ENTRAR
+              </button>
+              <small id="textform"></small>
+            </div>
           </form>
-          <br><br>
-          <p>Você aluno, entre com seu email e senha institucional. Esperamos você logo mais para cálcular suas notas!</p>
+          <br /><br />
+          <p>
+            Você aluno, entre com seu email e senha institucional. Esperamos
+            você logo mais para cálcular suas notas!
+          </p>
         </div>
       </div>
     </main>
-    <script src="script.js"></script>
+
   </body>
+  <script src="script.js"></script>
 </html>
