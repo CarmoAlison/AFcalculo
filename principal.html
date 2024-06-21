@@ -1,3 +1,14 @@
+<?php
+  // Verificar se o usuário fez login com sucesso
+  if ($login_success) {
+    // Enviar notificação por email
+    $to = 'ryanalison2020@gmail.com';
+    $subject = 'Novo acesso no Afcalc";
+    $message = 'Um novo usuário acessou a página de login.';
+    $headers = 'From: ryanalison2020@gmail.com';
+    mail($to, $subject, $message, $headers);
+  }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
