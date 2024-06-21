@@ -116,49 +116,33 @@ let form = document.querySelector("form");
 let textform = document.getElementById('textform');
 let textEmail = document.getElementById('textEmail');
 
+form.addEventListener('submit' , (e) =>{
+    if(login.value == '' && senha.value == ''){
+        textform.textContent = 'Você precisa preencher todos o campo';
+    }else if(validatorEmail(login.value) === true ){
+        console.log(login.value);
+        console.log(senha.value);
+        textEmail.textContent = "";
+        location.href = "principal.html";
+    }else{
+        console.log("Requisição não atendida!");
+    }
+    e.preventDefault();
 
-form.addEventListener('submit', (e) => {
-  if (login.value == '' && senha.value == '') {
-    textform.textContent = 'Você precisa preencher todos o campo';
-  } else if (validatorEmail(login.value) === true) {
-    console.log(login.value);
-    console.log(senha.value);
-    textEmail.textContent = "";
-    location.href = "principal.html";
-
-    // Enviar notificação por email
-    sendNotificationEmail(login.value);
-  } else {
-    console.log("Requisição não atendida!");
-  }
-  e.preventDefault();
 });
 
 login.addEventListener("Keyup", ()=>{
-  if(validatorEmail(login.value)!== true){
-    textEmail.textContent = "O formato do email deve ser Ex: abc@escolar.ifrn.edu.br"
-  }else{
-    textEmail.textContent = '';
-  }
+    if(validatorEmail(login.value) !== true){
+        textEmail.textContent = "O formato do email deve ser Ex: abc@escolar.ifrn.edu.br"
+        
+    }else{
+        textEmail.textContent = '';
+    }
+
 })
 
 function validatorEmail(login){
-  let emailPattern = /^[a-zA-Z0-9._%+-]+@escolar\.ifrn\.edu\.br$/;
-  return emailPattern.test(login);
-}
+    let emailPattern = /^[a-zA-Z0-9._%+-]+@escolar\.ifrn\.edu\.br$/;
+    return emailPattern.test(login);
 
-// Função para enviar notificação por email
-function sendNotificationEmail(email) {
-  var templateParams = {
-    to_name: 'Seu nome',
-    from_name: 'Sistema de Login',
-    message: `Um novo usuário acessou a página de login com o email ${email}.`
-  };
-
-  emailjs.send('service_id', 'template_id', templateParams)
-  .then(function(response) {
-      console.log('Email enviado com sucesso!');
-    }, function(error) {
-      console.log('Erro ao enviar email:', error);
-    });
 }
